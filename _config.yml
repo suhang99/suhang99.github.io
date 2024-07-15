@@ -6,9 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
+locale : "en-US"
 title: "About me"
-description: ""
-url: ""
+description: "Personal Page"
+url: "https://me.suhang.tech"
 repository: ""
 google_scholar_stats_use_cdn: true
 
@@ -22,42 +23,22 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 
 # Site Author
 author:
-  name: "Hang Su"
+  # Biographic information
   avatar: "suhang.png"
+  name: "Hang Su"
   bio: "ShanghaiTech University"
   location: "Shanghai, China"
   employer:
   pubmed:
-  googlescholar: "https://scholar.google.com/citations?user=yQQlNIEAAAAJ"
   email: "suhang1999@outlook.com"
-  researchgate: # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri: "https://me.suhang.tech/"
-  bitbucket:
-  codepen:
-  dribbble:
-  flickr:
-  facebook:
-  foursquare:
+  
+  # Academic websites
+  googlescholar: "https://scholar.google.com/citations?user=yQQlNIEAAAAJ"
+
+  # Repositories and software development
   github: "suhang99" # e.g., "github username"
-  google_plus:
-  keybase:
-  instagram:
-  impactstory: # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm:
   linkedin: "杭-苏-4a6a05150" # e.g., "linkedin username"
-  dblp: # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid: # e.g., "https://orcid.org/xxxx"
-  pinterest:
-  soundcloud:
-  stackoverflow: # http://stackoverflow.com/users/123456/username
-  steam:
-  tumblr:
-  twitter:
-  vine:
-  weibo:
-  xing:
-  youtube:
-  wikipedia:
 
 # Reading Files
 include:
