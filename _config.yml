@@ -9,7 +9,7 @@
 locale : "en-US"
 title: "About me"
 description: "Personal Page"
-url: "https://me.suhang.tech"
+url: "https://suhang99.github.io"
 repository: ""
 google_scholar_stats_use_cdn: true
 
@@ -24,14 +24,14 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 # Site Author
 author:
   # Biographic information
-  avatar: "suhang.png"
+  avatar: "photo.jpg"
   name: "Hang Su"
   bio: "ShanghaiTech University"
   location: "Shanghai, China"
   employer:
   pubmed:
-  email: "suhang1999@outlook.com"
-  uri: "https://me.suhang.tech/"
+  email: "suhang@shanghaitech.edu.cn"
+  uri: "https://suhang99.github.io"
   
   # Academic websites
   googlescholar: "https://scholar.google.com/citations?user=yQQlNIEAAAAJ"
