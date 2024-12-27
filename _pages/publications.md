@@ -1,6 +1,6 @@
 # 📝 Publications 
 - [Motion-Aware Optical Camera Communication with Event Cameras](https://ieeexplore.ieee.org/abstract/document/10797688/) \\
-Su, H., Gao, L., Liu, T., Kneip, L. \\
+**Su, H.**, Gao, L., Liu, T., Kneip, L. \\
 IEEE Robotics and Automation Letters (RA-L). 2024. \\
 [Project Page](https://github.com/suhang99/EventOCC)
 
