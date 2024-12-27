@@ -21,7 +21,7 @@ redirect_from:
 
 {% include_relative publications.md %}
 
-{% include_relative projects.md %}
+<!-- {% include_relative projects.md %} -->
 
 {% include_relative honors.md %}
 

@@ -1,3 +1,6 @@
+# 💼 Internship Experience
+- Autonomous Driving Group at *Changan Automobile* (2021 Summer)
+
 # 👨‍🏫 Teaching Assistant Experience
 
 - Introduction to Programming (2022 Spring) 

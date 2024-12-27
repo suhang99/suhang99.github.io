@@ -1,4 +1,9 @@
 # 📝 Publications 
+- [Motion-Aware Optical Camera Communication with Event Cameras](https://ieeexplore.ieee.org/abstract/document/10797688/) \\
+Su, H., Gao, L., Liu, T., Kneip, L. \\
+IEEE Robotics and Automation Letters (RA-L). 2024. \\
+[Project Page](https://github.com/suhang99/EventOCC)
+
 - [An N-Point Linear Solver for Line and Motion Estimation with Event Cameras](https://openaccess.thecvf.com/content/CVPR2024/papers/Gao_An_N-Point_Linear_Solver_for_Line_and_Motion_Estimation_with_CVPR_2024_paper.pdf) <span style="color:red">(Oral)</span> \\
 Gao, L., Gehrig, D., __Su, H.__, Scaramuzza, D., Kneip, L., \\
 IEEE Conf. Computer Vision and Pattern Recognition (CVPR). 2024. \\
