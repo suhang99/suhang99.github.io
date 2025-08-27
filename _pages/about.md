@@ -15,4 +15,6 @@ redirect_from:
 
 {% include_relative sections/honors.md %}
 
-{% include_relative sections/experience.md %}
+{% include_relative sections/work_experience.md %}
+
+{% include_relative sections/teaching_experience.md %}
