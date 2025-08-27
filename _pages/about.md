@@ -7,12 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-{% include_relative introduction.md %}
+{% include_relative sections/introduction.md %}
 
-{% include_relative education.md %}
+{% include_relative sections/education.md %}
 
-{% include_relative publications.md %}
+{% include_relative sections/publications.md %}
 
-{% include_relative honors.md %}
+{% include_relative sections/honors.md %}
 
-{% include_relative experience.md %}
+{% include_relative sections/experience.md %}
