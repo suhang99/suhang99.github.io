@@ -4,6 +4,12 @@
 
 @use "variables" as v;
 
+// Base font: system Helvetica stack, lightweight (matches al-folio customization guide)
+body {
+  font-family: v.$font-family-base;
+  font-weight: v.$font-weight-base;
+}
+
 p,
 h1,
 h2,
@@ -17,6 +23,26 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+}
+
+// Post title: thin weight with slight negative tracking, matching Mayank Mittal style
+h1.post-title {
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+// Section headings (Education, Selected Publications, etc.) rendered bold
+.post article h2 {
+  font-weight: 700;
+}
+
+// Subtitle under name: smaller, secondary color, lighter weight
+p.desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--global-text-color);
+  margin-top: -0.2rem;
+  margin-bottom: 1.5rem;
 }
 
 hr {

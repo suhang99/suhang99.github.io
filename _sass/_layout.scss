@@ -33,10 +33,81 @@ body.sticky-bottom-footer {
   max-width: v.$max-content-width;
 }
 
-// Profile
+// Profile margin and social icons layout.
+// Photo width/min-width is set in _components.scss (which loads after this file).
 .profile {
+  margin-left: 2rem;
   img {
     width: 100%;
+  }
+  .profile-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+    padding-top: 0.4rem;
+    font-size: 1.4rem;
+
+    // Use each platform's brand color instead of the theme color
+    a {
+      &:hover {
+        opacity: 0.7;
+        text-decoration: none;
+      }
+      i {
+        // Override the inherited theme link color
+        color: var(--social-icon-color, var(--global-text-color));
+      }
+      i.fa-envelope,
+      i.ai-cv {
+        --social-icon-color: var(--global-text-color);
+      }
+      i.ai-google-scholar {
+        --social-icon-color: #4285f4;
+      }
+      i.fa-github {
+        --social-icon-color: #181717;
+      }
+      i.fa-linkedin {
+        --social-icon-color: #0a66c2;
+      }
+      i.fa-x-twitter,
+      i.fa-twitter {
+        --social-icon-color: #000000;
+      }
+      i.ai-orcid {
+        --social-icon-color: #a6ce39;
+      }
+      i.ai-semantic-scholar {
+        --social-icon-color: #1857b6;
+      }
+    }
+
+    // In dark mode, swap dark brand colors (GitHub black, twitter X black) for light fills
+    html[data-theme="dark"] & {
+      a {
+        i.fa-github,
+        i.fa-x-twitter,
+        i.fa-twitter {
+          --social-icon-color: #f0f6fc;
+        }
+      }
+    }
+  }
+}
+
+// Section dividers (--- in markdown) clear the profile photo float,
+// so subsections like Education always start full-width below the photo.
+// Semantically correct: <hr> signals a content boundary and should clear floats.
+.post article hr {
+  clear: both;
+}
+
+@media (max-width: 576px) {
+  .profile {
+    width: 50%;
+    float: none !important;
+    margin: 0 auto 1.5rem !important;
   }
 }
 

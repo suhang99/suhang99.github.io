@@ -39,31 +39,34 @@
     li {
       margin-bottom: 1rem;
 
+      // Vertically center the preview thumbnail (and venue badge) with the text on the right
+      > .row {
+        align-items: center;
+      }
+
+      .col.abbr {
+        display: flex;
+        flex-direction: column;
+      }
+
       .preview {
-        display: inline-block;
+        display: block;
+        // Natural aspect ratio — no stretch, no cover
+
+        picture,
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
       }
 
       .abbr {
         margin-bottom: 0.5rem;
 
+        // Venue badge hidden — venue is shown in the periodical text
         abbr {
-          display: inline-block;
-          background-color: var(--global-theme-color);
-          margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
-
-          a {
-            color: white;
-
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-
-        .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
+          display: none;
         }
       }
 
@@ -98,23 +101,35 @@
         }
       }
 
+      // Award word in burnt orange — complements the green theme via autumn palette
+      .award-label {
+        color: #d84315;
+      }
+
+      // md-badges (shields.io with simpleicons logos) for paper links.
+      // Each link is an <a> wrapping an <img> from img.shields.io.
       .links {
-        a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          margin-left: 0;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        align-items: center;
+
+        a {
+          display: inline-flex;
+          line-height: 0; // remove inline-image baseline gap
+          border-bottom: none !important;
+          transition: opacity 0.15s ease, transform 0.15s ease;
+
+          img {
+            height: 20px; // matches shields.io flat-square default height
+            display: block;
+          }
 
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            opacity: 0.8;
+            text-decoration: none;
           }
-        }
-        a.award.btn {
-          border-color: var(--global-highlight-color);
         }
       }
 

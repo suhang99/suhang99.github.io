@@ -18,6 +18,7 @@ $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;
 $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
+$theme-green: #7cb342 !default; // Material Light Green 600 — used as primary theme color
 $purple-color: #b509ac !default;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;
@@ -49,4 +50,8 @@ $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
 
 // Max width default
-$max-content-width: 930px !default;
+$max-content-width: 750px !default;
+
+// Base font (system stack matching Mayank Mittal's style)
+$font-family-base: Helvetica, Arial, sans-serif !default;
+$font-weight-base: 300 !default;
