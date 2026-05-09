@@ -81,13 +81,12 @@ cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
-# Visitor map widget. Paste the data hash from a mapmyvisitors.com / clustrmaps.com
-# embed snippet. Leave blank to disable. Type ("globe" or "map") controls which
-# widget script is loaded; mapmyvisitors_params accepts extra query string args
-# (e.g. cl=ffffff for white background, w=a for auto width).
-mapmyvisitors_id: EqjXC0x8J1NFm-fgcJdB_A96s5DijtsDlpNlQrjhZHU
-mapmyvisitors_type: map # "globe" → 3D rotating globe; "map" → flat 2D world map
-mapmyvisitors_params: cl=dde2e8&w=200&co=f5f7fa&cmo=7cb342&cmn=ff6f00&ct=37474f
+# Visitor map widget (ClustrMaps). Paste the data hash from a clustrmaps.com
+# embed snippet. Leave blank to disable. clustrmaps_params accepts extra query
+# string args appended to the script URL (e.g. cl=ffffff for white background,
+# w=a for auto width).
+clustrmaps_id: ezs8lzhQwh6FaF0hJk8CdQGagwaDWCztHfO0NP82J88
+clustrmaps_params: cl=dde2e8&w=200&co=f5f7fa&cmo=7cb342&cmn=ff6f00&ct=37474f
 # Param key: cl=land, co=ocean, cmo=past visitors, cmn=recent visitors, ct=text,
 # w=width (number in px or "a" for auto/full-container). t=n triggers a dark
 # widget theme — leave it out for a transparent / page-matching background.

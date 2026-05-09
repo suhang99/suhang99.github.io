@@ -1,10 +1,10 @@
 {% capture footer_contents %}
-  {% if site.mapmyvisitors_id and page.url == "/" %}
+  {% if site.clustrmaps_id and page.url == "/" %}
     <div class="visitor-map text-center mb-2">
       <script
         type="text/javascript"
-        id="mapmyvisitors"
-        src="https://mapmyvisitors.com/{{ site.mapmyvisitors_type | default: 'globe' }}.js?d={{ site.mapmyvisitors_id }}{% if site.mapmyvisitors_params %}&{{ site.mapmyvisitors_params }}{% endif %}"
+        id="clustrmaps"
+        src="https://clustrmaps.com/map_v2.js?d={{ site.clustrmaps_id }}{% if site.clustrmaps_params %}&{{ site.clustrmaps_params }}{% endif %}"
       ></script>
     </div>
   {% endif %}
