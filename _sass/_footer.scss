@@ -23,7 +23,7 @@ footer.fixed-bottom {
   }
 }
 
-footer.sticky-bottom {
+footer.page-footer {
   border-top: 1px solid var(--global-divider-color);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -31,5 +31,12 @@ footer.sticky-bottom {
 
   .container {
     text-align: center;
+  }
+
+  // Visitor map: own row, centered, copyright text wraps below
+  .visitor-map {
+    display: block;
+    margin: 0 auto 1rem;
+    width: max-content; // shrink-to-fit so the panel only spans the widget width
   }
 }

@@ -1,4 +1,13 @@
 {% capture footer_contents %}
+  {% if site.mapmyvisitors_id and page.url == "/" %}
+    <div class="visitor-map text-center mb-2">
+      <script
+        type="text/javascript"
+        id="mapmyvisitors"
+        src="https://mapmyvisitors.com/{{ site.mapmyvisitors_type | default: 'globe' }}.js?d={{ site.mapmyvisitors_id }}{% if site.mapmyvisitors_params %}&{{ site.mapmyvisitors_params }}{% endif %}"
+      ></script>
+    </div>
+  {% endif %}
   &copy; Copyright {{ site.time | date: '%Y' }}
   {{ site.first_name }}
   {{ site.middle_name }}
@@ -18,7 +27,7 @@
     </div>
   </footer>
 {% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo">
+  <footer class="page-footer mt-5" role="contentinfo">
     {% if site.newsletter.enabled %}
       {% include newsletter.liquid %}
     {% endif %}
