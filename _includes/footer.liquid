@@ -1,11 +1,7 @@
 {% capture footer_contents %}
-  {% if site.clustrmaps_id and page.url == "/" %}
+  {% if site.mapmyvisitors_embed and page.url == "/" %}
     <div class="visitor-map text-center mb-2">
-      <script
-        type="text/javascript"
-        id="clustrmaps"
-        src="https://clustrmaps.com/map_v2.js?d={{ site.clustrmaps_id }}{% if site.clustrmaps_params %}&{{ site.clustrmaps_params }}{% endif %}"
-      ></script>
+      {{ site.mapmyvisitors_embed }}
     </div>
   {% endif %}
   &copy; Copyright {{ site.time | date: '%Y' }}

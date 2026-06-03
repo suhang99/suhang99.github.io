@@ -81,15 +81,16 @@ cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch_analytics: # your Pirsch analytics site ID (length 32 characters)
 openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
 
-# Visitor map widget (ClustrMaps). Paste the data hash from a clustrmaps.com
-# embed snippet. Leave blank to disable. clustrmaps_params accepts extra query
-# string args appended to the script URL (e.g. cl=ffffff for white background,
-# w=a for auto width).
+# Visitor map widget (MapMyVisitors). Paste the embed snippet from
+# mapmyvisitors.com. Leave blank to disable.
+mapmyvisitors_embed: >
+  <script type='text/javascript' id='mapmyvisitors'
+  src='https://mapmyvisitors.com/map.js?cl=d8e2d0&w=a&t=n&d=EqjXC0x8J1NFm-fgcJdB_A96s5DijtsDlpNlQrjhZHU&co=eaf3f2&cmo=7cb342&cmn=ff7a59&ct=374151'></script>
+
+# Legacy ClustrMaps settings, kept only for reference. ClustrMaps currently has
+# DNS reliability issues, so the footer no longer renders this service.
 clustrmaps_id: ezs8lzhQwh6FaF0hJk8CdQGagwaDWCztHfO0NP82J88
 clustrmaps_params: cl=dde2e8&w=200&co=f5f7fa&cmo=7cb342&cmn=ff6f00&ct=37474f
-# Param key: cl=land, co=ocean, cmo=past visitors, cmn=recent visitors, ct=text,
-# w=width (number in px or "a" for auto/full-container). t=n triggers a dark
-# widget theme — leave it out for a transparent / page-matching background.
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)

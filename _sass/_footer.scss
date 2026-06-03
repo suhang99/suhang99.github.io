@@ -49,6 +49,24 @@ footer.page-footer {
   .visitor-map {
     display: block;
     margin: 0 auto 1rem;
-    width: max-content; // shrink-to-fit so the panel only spans the widget width
+    max-width: 100%;
+    overflow-x: auto;
+    width: 50%;
+  }
+
+  .visitor-map #mapmyvisitors-widget {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  .visitor-map iframe,
+  .visitor-map img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 576px) {
+    .visitor-map {
+      width: 100%;
+    }
   }
 }
