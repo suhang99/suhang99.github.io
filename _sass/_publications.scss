@@ -119,7 +119,9 @@
           display: inline-flex;
           line-height: 0; // remove inline-image baseline gap
           border-bottom: none !important;
-          transition: opacity 0.15s ease, transform 0.15s ease;
+          transition:
+            opacity 0.15s ease,
+            transform 0.15s ease;
 
           img {
             height: 20px; // matches shields.io flat-square default height

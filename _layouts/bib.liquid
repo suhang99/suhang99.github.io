@@ -193,7 +193,10 @@
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
     <div class="periodical">
-      {{ periodical | strip }}{% if entry.award %} | <span class="award-label">{{ entry.award_name | default: "Award" }}</span>{% endif %}
+      {{ periodical | strip -}}
+      {%- if entry.award %}
+        | <span class="award-label">{{ entry.award_name | default: 'Award' }}</span>
+      {%- endif %}
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
@@ -251,7 +254,10 @@
       {% if entry.supp %}
         {% capture supp_url %}{% if entry.supp contains '://' %}{{ entry.supp }}{% else %}{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}{% endif %}{% endcapture %}
         <a href="{{ supp_url }}" target="_blank" rel="noopener">
-          <img src="https://img.shields.io/badge/Supp-{{ badge_color }}?logo=adobeacrobatreader&logoColor=white&style={{ badge_style }}" alt="Supplementary">
+          <img
+            src="https://img.shields.io/badge/Supp-{{ badge_color }}?logo=adobeacrobatreader&logoColor=white&style={{ badge_style }}"
+            alt="Supplementary"
+          >
         </a>
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
