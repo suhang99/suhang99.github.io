@@ -34,17 +34,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/plotly/";
           
         },
-      },{id: "post-a-post-with-image-galleries",
-        
-          title: "a post with image galleries",
-        
-        description: "this is what included image galleries could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/photo-gallery/";
-          
-        },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
         
           title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
@@ -109,17 +98,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/code-diff/";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/advanced-images/";
           
         },
       },{id: "post-a-post-with-vega-lite",
@@ -364,17 +342,6 @@ ninja.data = [{
             window.location.href = "/blog/2015/code/";
           
         },
-      },{id: "post-a-post-with-images",
-        
-          title: "a post with images",
-        
-        description: "this is what included images could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2015/images/";
-          
-        },
       },{id: "post-a-post-with-formatting-and-links",
         
           title: "a post with formatting and links",
@@ -391,51 +358,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
