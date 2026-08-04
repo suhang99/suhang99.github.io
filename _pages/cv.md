@@ -164,7 +164,7 @@ nav_order: 5
           <dt>Languages</dt>
           <dd>C++, Python</dd>
           <dt>Tools</dt>
-          <dd>PyTorch, ROS, NumPy, Eigen, Ceres Solver, CMake, Git, COLMAP, Pixi</dd>
+          <dd>PyTorch, ROS, NumPy, Eigen, Ceres, CMake, Git, COLMAP, Pixi</dd>
         </dl>
       </div>
     </section>
