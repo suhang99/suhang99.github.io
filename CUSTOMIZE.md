@@ -62,7 +62,7 @@ Here we will give you some tips on how to customize the website. One important t
     - [How it works](#how-it-works)
     - [Configuration](#configuration-1)
     - [Disable related posts for a specific post](#disable-related-posts-for-a-specific-post)
-    - [Additional configuration in _config.yml](#additional-configuration-in-_configyml)
+    - [Additional configuration options](#additional-configuration-options)
   - [Managing publication display](#managing-publication-display)
   - [Adding a Google Calendar](#adding-a-google-calendar)
     - [Basic usage](#basic-usage)
@@ -967,9 +967,9 @@ related_posts: false
 ---
 ```
 
-### Additional configuration in \_config.yml
+### Additional configuration options
 
-You can also customize related posts behavior with these settings:
+You can also customize related posts behavior in `_config.yml` with these settings:
 
 ```yaml
 related_blog_posts:
