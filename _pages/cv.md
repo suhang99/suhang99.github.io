@@ -31,7 +31,8 @@ nav_order: 5
         <article class="cv-entry">
           <div>
             <h3>University of Pennsylvania</h3>
-            <p class="cv-entry-meta">Visiting PhD Student · GRASP Lab · <span class="cv-highlight">Advisor: Prof. Kostas Daniilidis</span></p>
+            <p class="cv-entry-meta">Visiting PhD Student · GRASP Lab</p>
+            <p class="cv-entry-meta"><span class="cv-highlight">Advisor: Prof. Kostas Daniilidis</span></p>
           </div>
           <time>Sep 2025 – Aug 2026</time>
         </article>
@@ -39,7 +40,8 @@ nav_order: 5
         <article class="cv-entry">
           <div>
             <h3>ShanghaiTech University</h3>
-            <p class="cv-entry-meta">PhD Student in Computer Science · Mobile Perception Lab · <span class="cv-highlight">Advisor: Prof. Laurent Kneip</span></p>
+            <p class="cv-entry-meta">PhD Student in Computer Science · Mobile Perception Lab</p>
+            <p class="cv-entry-meta"><span class="cv-highlight">Advisor: Prof. Laurent Kneip</span></p>
             <p class="cv-entry-summary">Visual localization, 3D reconstruction, and event-based vision.</p>
           </div>
           <time>Sep 2021 – Jun 2027</time>
