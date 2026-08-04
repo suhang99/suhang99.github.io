@@ -7,20 +7,21 @@ nav_order: 5
 ---
 
 <div class="post cv-index">
-  <header class="post-header">
+  <header class="post-header cv-heading">
     <h1 class="post-title">CV</h1>
-  </header>
 
-  <nav class="cv-pdf-card" aria-label="Curriculum vitae PDFs">
-    <a class="cv-pdf-button cv-pdf-button--primary" href="{{ '/assets/pdf/cv-en.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
-      <span>Curriculum Vitae</span>
-      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-    </a>
-    <a class="cv-pdf-button cv-pdf-button--secondary" href="{{ '/assets/pdf/cv-zh.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" lang="zh-CN">
-      <span>个人简历</span>
-      <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-    </a>
-  </nav>
+    <nav class="cv-pdf-card" aria-label="Curriculum vitae PDFs">
+      <a class="cv-pdf-button cv-pdf-button--primary" href="{{ '/assets/pdf/cv-en.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
+        <span>Curriculum Vitae</span>
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </a>
+      <a class="cv-pdf-button cv-pdf-button--secondary" href="{{ '/assets/pdf/cv-zh.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" lang="zh-CN">
+        <span>个人简历</span>
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+      </a>
+    </nav>
+
+  </header>
 
   <div class="cv-web">
     <section class="cv-section" aria-labelledby="cv-education">
@@ -98,6 +99,7 @@ nav_order: 5
           <div>
             <h3><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Gao_A_5-Point_Minimal_Solver_for_Event_Camera_Relative_Motion_Estimation_ICCV_2023_paper.pdf" target="_blank" rel="noopener noreferrer">A 5-Point Minimal Solver for Event Camera Relative Motion Estimation</a></h3>
             <p class="cv-entry-meta"><span class="cv-highlight">ICCV 2023 · Oral</span> · Co-first author</p>
+            <p class="cv-entry-summary">Established a motion-geometry model for event-camera line features and designed a 5-point minimal solver to estimate camera translation velocity with known rotation.</p>
           </div>
           <time>2023</time>
         </article>
@@ -111,7 +113,7 @@ nav_order: 5
         <article class="cv-entry">
           <div>
             <h3>Changan Automobile</h3>
-            <p class="cv-entry-meta">Intern · Autonomous Driving Group · Chongqing, China</p>
+            <p class="cv-entry-meta"><span class="cv-highlight">Intern</span> · Autonomous Driving Group · Chongqing, China</p>
           </div>
           <time>Aug 2021</time>
         </article>
@@ -119,7 +121,7 @@ nav_order: 5
         <article class="cv-entry">
           <div>
             <h3>ShanghaiTech University</h3>
-            <p class="cv-entry-meta">Teaching Assistant · Machine Learning, Introduction to Programming, Computer Architecture</p>
+            <p class="cv-entry-meta"><span class="cv-highlight">Teaching Assistant</span> · Machine Learning, Introduction to Programming, Computer Architecture</p>
           </div>
           <time>2020 – 2022</time>
         </article>
@@ -131,11 +133,11 @@ nav_order: 5
 
       <div class="cv-section-content">
         <article class="cv-entry cv-entry-compact">
-          <h3>Outstanding Student (Top 5%)</h3>
+          <h3>Outstanding Student (Top 10%)</h3>
           <time>2022, 2024, 2025</time>
         </article>
         <article class="cv-entry cv-entry-compact">
-          <h3>Merit Student (Top 10%)</h3>
+          <h3>Merit Student (Top 5%)</h3>
           <time>2023</time>
         </article>
         <article class="cv-entry cv-entry-compact">
