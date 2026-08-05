@@ -2694,11 +2694,26 @@ d-citation-list .references .title {
         tokenize: function (text, grammar) {
           var rest = grammar.rest;
           if (rest) {
-            for (var token in rest) {
-              grammar[token] = rest[token];
-            }
-
-            delete grammar.rest;
+            var expandedGrammar = Object.create(null);
+            Object.keys(grammar).forEach(function (token) {
+              if (token !== "rest") {
+                Object.defineProperty(expandedGrammar, token, {
+                  value: grammar[token],
+                  writable: true,
+                  enumerable: true,
+                  configurable: true,
+                });
+              }
+            });
+            Object.keys(rest).forEach(function (token) {
+              Object.defineProperty(expandedGrammar, token, {
+                value: rest[token],
+                writable: true,
+                enumerable: true,
+                configurable: true,
+              });
+            });
+            grammar = expandedGrammar;
           }
 
           var tokenList = new LinkedList();
@@ -2798,7 +2813,7 @@ d-citation-list .references .title {
        */
       function matchGrammar(text, tokenList, grammar, startNode, startPos, oneshot, target) {
         for (var token in grammar) {
-          if (!grammar.hasOwnProperty(token) || !grammar[token]) {
+          if (!Object.prototype.hasOwnProperty.call(grammar, token) || !grammar[token]) {
             continue;
           }
 
@@ -4235,7 +4250,10 @@ ${css}
 
       if (this.hasAttribute("block")) {
         // normalize the tab indents
-        content = content.replace(/\n/, "");
+        const firstNewline = content.indexOf("\n");
+        if (firstNewline !== -1) {
+          content = content.slice(0, firstNewline) + content.slice(firstNewline + 1);
+        }
         const tabs = content.match(/\s*/);
         content = content.replace(new RegExp("\n" + tabs, "g"), "\n");
         content = content.trim();
