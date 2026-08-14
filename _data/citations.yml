@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-14'
 papers:
   yQQlNIEAAAAJ:9yKSN-GCB0IC:
     citations: 23
@@ -14,12 +14,12 @@ papers:
     title: A 5-point minimal solver for event camera relative motion estimation
     year: '2023'
   yQQlNIEAAAAJ:qjMakFHDy7sC:
-    citations: 16
+    citations: 17
     title: Motion-aware optical camera communication with event cameras
     year: '2024'
   yQQlNIEAAAAJ:u-x6o8ySG0sC:
     citations: 10
-    title: 'Denoised internal models: a brain-inspired autoencoder against adversarial attacks'
+    title: 'Denoised internal models: A brain-inspired autoencoder against adversarial attacks'
     year: '2022'
   yQQlNIEAAAAJ:zYLM7Y9cAGgC:
     citations: 1
