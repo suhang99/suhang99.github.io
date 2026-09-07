@@ -11,11 +11,11 @@ nav_order: 5
     <h1 class="post-title">CV</h1>
 
     <nav class="cv-pdf-card" aria-label="Curriculum vitae PDFs">
-      <a class="cv-pdf-button cv-pdf-button--primary" href="{{ '/assets/pdf/cv-en.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <a class="cv-pdf-button cv-pdf-button--primary" href="{{ '/assets/pdf/cv-en.pdf' | relative_url | bust_file_cache }}" target="_blank" rel="noopener noreferrer">
         <span>Curriculum Vitae</span>
         <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
       </a>
-      <a class="cv-pdf-button cv-pdf-button--secondary" href="{{ '/assets/pdf/cv-zh.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" lang="zh-CN">
+      <a class="cv-pdf-button cv-pdf-button--secondary" href="{{ '/assets/pdf/cv-zh.pdf' | relative_url | bust_file_cache }}" target="_blank" rel="noopener noreferrer" lang="zh-CN">
         <span>个人简历</span>
         <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
       </a>
